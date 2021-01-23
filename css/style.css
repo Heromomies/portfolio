@@ -143,7 +143,12 @@ div.content {
   background: var(--first-color);
   color: white;
 }
-
+.column img{
+  width: 25%;
+  margin-left: var(--mb-5);
+  margin-top: var(--mb-5);
+  justify-items: center;
+}
 @media screen and (max-width: 900px) {
   ul.sidenav {
     width: 100%;
