@@ -1,35 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-:root
-{
-    /*          COLOR           */
-    --first-color: #004aad;
-    --second-color: #7AB4FF;
-    --third-color: #5795E6;
-    --color-background: #f1f1f1;
-    --color-navbar-hover-background: #555;
+:root {
+  /*          COLOR           */
+  --first-color: #004aad;
+  --second-color: #7AB4FF;
+  --third-color: #5795E6;
+  --color-background: #f1f1f1;
+  --color-navbar-hover-background: #555;
 
-    /*         FONT COLOR     */
-    --first-font-color: white;
-    --second-font-color: #000;
+  /*         FONT COLOR     */
+  --first-font-color: white;
+  --second-font-color: #000;
 
-    /*         FONT FAMILY     */
-    --body-font: 'Roboto', sans-serif;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smalller-font-size: .6rem;
-    /*         MARGIN     */
-    --mb-1: .5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-    --mb-4: 2rem;
-    --mb-5: 2.5rem;
+  /*         FONT FAMILY     */
+  --body-font: 'Roboto', sans-serif;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smalller-font-size: .6rem;
+  /*         MARGIN     */
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
 }
 
-body {margin: 0;}
+body {
+  margin: 0;
+  font-family: var(--body-font);
+}
 
 ul.sidenav {
   list-style-type: none;
@@ -43,13 +45,16 @@ ul.sidenav {
 }
 
 ul.sidenav li a {
-  display: block;
-  color: var(--second-font-color);
-  padding: 15px;
-  text-decoration: none;
   float: left;
+  padding: 15px 0;
+  color: var(--second-font-color);
+  text-decoration: none;
+  width: 25%;
+  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+  /* If you want the text to be centered */
 }
- 
+
 ul.sidenav li a.active {
   background-color: var(--first-color);
   color: var(--first-font-color);
@@ -65,50 +70,100 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
 }
+
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7%;
-    width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  width: 15%;
+  transition: transform .2s;
 }
-img
-{
-    border-radius: 50%;
+
+.center:hover {
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.centertext
-{
-    text-align: center 
+
+img {
+  border-radius: 50%;
 }
-.centertext.h1
-{
-    font-size: var(--h3-font-size);
+
+.centertext {
+  text-align: center
 }
-.centertext.p
-{
-    font-size: var(--h1-font-size);
+
+.centertext h1 {
+  font-size: var(--h1-font-size);
 }
-.title.h2{
-    margin-right: var(--mb-3);
+
+.centertext p {
+  font-size: var(--h2-font-size);
 }
+
+.titleclass h2 {
+  margin-left: var(--mb-5);
+  font-size: var(--h2-font-size);
+  margin-top: 5%;
+}
+
+.titleclass p.textleft {
+
+  font-size: var(--h3-font-size);
+  margin-top: 5%;
+  display: flex;
+}
+
+.btn {
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Blue */
+.info {
+  border-color: var(--first-color);
+  color: var(--first-color);
+}
+
+.info:hover {
+  background: var(--first-color);
+  color: white;
+}
+
 @media screen and (max-width: 900px) {
   ul.sidenav {
     width: 100%;
     height: auto;
     position: relative;
   }
-  
+
   ul.sidenav li a {
-    float: left;
-    padding: 15px;
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    /* If you want the text to be left-aligned on small screens */
+    ;
   }
-  
-  div.content {margin-left: 0;}
+
+  div.content {
+    margin-left: 0;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   ul.sidenav li a {
-    text-align: center;
     float: none;
+    display: block;
+    width: auto;
+    text-align: left;
+    padding-left: 20px;
+    /* If you want the text to be left-aligned on small screens */
   }
 }
