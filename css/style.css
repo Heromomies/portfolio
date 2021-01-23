@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root
+{
+    /*          COLOR           */
+    --first-color: #004aad;
+    --second-color: #7AB4FF;
+    --third-color: #5795E6;
+    --color-background: #f1f1f1;
+    --color-navbar-hover-background: #555;
+
+    /*         FONT COLOR     */
+    --first-font-color: white;
+    --second-font-color: #000;
+
+    /*         FONT FAMILY     */
+    --body-font: 'Roboto', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smalller-font-size: .6rem;
+    /*         MARGIN     */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+}
+
+body {margin: 0;}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--color-background);
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: var(--second-font-color);
+  padding: 15px;
+  text-decoration: none;
+  float: left;
+}
+ 
+ul.sidenav li a.active {
+  background-color: var(--first-color);
+  color: var(--first-font-color);
+}
+
+ul.sidenav li a:hover:not(.active) {
+  background-color: var(--color-navbar-hover-background);
+  color: var(--first-font-color);
+}
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    width: 15%;
+}
+img
+{
+    border-radius: 50%;
+}
+.centertext
+{
+    text-align: center 
+}
+.centertext.h1
+{
+    font-size: var(--h3-font-size);
+}
+.centertext.p
+{
+    font-size: var(--h1-font-size);
+}
+.title.h2{
+    margin-right: var(--mb-3);
+}
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
