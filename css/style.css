@@ -66,12 +66,6 @@ ul.sidenav li a:hover:not(.active) {
   color: var(--first-font-color);
 }
 
-div.content {
-  margin-left: 25%;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -147,22 +141,81 @@ div.content {
   color: white;
 }
 
-.workcontainer h2 {
-  margin-left: var(--mb-6);
+.row {
+  margin: 8px -16px;
 }
 
-.workcontainer img {
-  display: block;
-  margin-left: var(--mb-6);
-  text-align: center;
-  width: auto;
-  height: auto;
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
 }
 
-.workcontainer P {
-  margin-left: var(--mb-6);
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
 }
 
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: -50px;
+}
+div.content {
+  margin-left: 23%;
+  padding: 0px 16px;
+  height: 400px;
+}
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .columnExp {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.columnExp {
+  float: left;
+  width: 45%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.contentExp {
+  background-color: white;
+  padding: -50px;
+}
+div.contentExp {
+  margin-left: var(--mb-6);
+  padding: 0px 16px;
+  height: 200;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1500px) {
   .btn {
     top: 85%;
