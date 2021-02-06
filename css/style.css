@@ -104,12 +104,13 @@ ul.sidenav li a:hover:not(.active) {
   font-size: var(--h3-font-size);
   margin-top: 5%;
   display: flex;
+  margin-left: var(--mb-6);
 }
 
 .titleclasswork h2 {
   margin-left: var(--mb-5);
   font-size: var(--h2-font-size);
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 .titleclasswork p.textleft {
@@ -174,23 +175,11 @@ div.content {
   padding: 0px 16px;
   height: 400px;
 }
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .columnExp {
-  padding: 8px;
-}
 
 /* Create four equal columns that floats next to each other */
 .columnExp {
   float: left;
   width: 45%;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Content */
@@ -203,13 +192,41 @@ div.contentExp {
   padding: 0px 16px;
   height: 200;
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
+/* Create four equal columns that floats next to each other */
+.columnIcons {
+  float: left;
+  width: 30%;
+  margin-top: var(--mb-5);
 }
 
+/* Content */
+.contentIcons {
+  background-color: white;
+  padding: -50px;
+}
+div.contentIcons {
+  margin-left: var(--mb-6);
+  padding: 0px 16px;
+  height: 200;
+}
+.contact
+{
+  margin-top: var(--mb-5);
+  margin-left: var(--mb-6);
+}
+.contact span
+{
+  font-size: var(--h3-font-size);
+  font-weight: bold;
+  color: var(--first-color);
+}
+.footer {
+  padding-top: var(--mb-2);
+  padding-bottom: var(--mb-2);
+  background-color: var(--first-color);
+  color: #fff;
+  text-align: center;
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -254,6 +271,9 @@ div.contentExp {
 
   .workcontainer h2 {
     margin-left: var(--mb-5);
+  }
+  .column {
+    width: 50%;
   }
 }
 
