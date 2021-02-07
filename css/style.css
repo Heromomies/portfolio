@@ -16,6 +16,7 @@
   --body-font: 'Roboto', sans-serif;
   --h1-font-size: 3rem;
   --h2-font-size: 2rem;
+  --h25-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -23,8 +24,8 @@
   /*         MARGIN     */
   --mb-1: .5rem;
   --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
+  --mb-3: 2rem;
+  --mb-4: 2.5rem;
   --mb-5: 2.5rem;
   --mb-6: 7rem;
 }
@@ -148,7 +149,7 @@ ul.sidenav li a:hover:not(.active) {
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
-.row > .column {
+.row>.column {
   padding: 8px;
 }
 
@@ -170,6 +171,7 @@ ul.sidenav li a:hover:not(.active) {
   background-color: white;
   padding: -50px;
 }
+
 div.content {
   margin-left: 23%;
   padding: 0px 16px;
@@ -187,11 +189,13 @@ div.content {
   background-color: white;
   padding: -50px;
 }
+
 div.contentExp {
   margin-left: var(--mb-6);
   padding: 0px 16px;
   height: 200;
 }
+
 /* Create four equal columns that floats next to each other */
 .columnIcons {
   float: left;
@@ -204,21 +208,26 @@ div.contentExp {
   background-color: white;
   padding: -50px;
 }
+
 div.contentIcons {
   margin-left: var(--mb-6);
   padding: 0px 16px;
-  height: 200;
 }
-.contact
-{
+
+.contact {
   margin-top: var(--mb-5);
   margin-left: var(--mb-6);
 }
-.contact span
-{
+
+.contact span {
   font-size: var(--h3-font-size);
   font-weight: bold;
   color: var(--first-color);
+}
+.titleclassworkcontact h2 {
+  margin-left: var(--mb-5);
+  font-size: var(--h2-font-size);
+  margin-top: 20%;
 }
 .footer {
   padding-top: var(--mb-2);
@@ -227,57 +236,87 @@ div.contentIcons {
   color: #fff;
   text-align: center;
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    margin-left: var(--mb-4);
   }
+  
+div.content {
+  height: 250px;
 }
-@media screen and (max-width: 1500px) {
   .btn {
-    top: 85%;
+    transform: translate(-50%, -200%);
   }
-}
+  .titleclass p.textleft {
+    font-size: var(--h5-font-size);
+    margin-left: var(--mb-4);
+  }
+  
+  .titleclasswork h2 {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+    margin-top: 20%;
+  }
+  
+  .titleclasswork p.textleft {
+  
+    font-size: var(--h3-font-size);
+    margin-top: 20%;
+    display: flex;
+  }
+  
+  .titleclass h2 {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+    margin-top: 5%;
+  }
+  .centertext h1 {
+    font-size: var(--h2-font-size);
+  }
 
-@media screen and (max-width: 900px) {
-  ul.sidenav {
+  .centertext p {
+    font-size: var(--h3-font-size);
+  }
+
+  .titleclass p.textleft {
+
+    font-size: var(--h3-font-size);
+    margin-top: 5%;
+    display: flex;
+    margin-left: var(--mb-4);
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .columnExp {
     width: 100%;
-    height: auto;
-    position: relative;
   }
 
-  ul.sidenav li a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-
+  div.contentExp {
+    margin-left: var(--mb-4);
   }
 
-  div.content {
-    margin-left: 0;
-  }
-  .workcontainer img {
-    display: block;
-    margin-left: var(--mb-5);
-    text-align: center;
-    width: 70%;
-    height: 70%;
+  .contact {
+    margin-top: var(--mb-5);
+    margin-left: var(--mb-4);
   }
 
-  .workcontainer P {
-    margin-left: var(--mb-5);
-  }
-
-  .workcontainer h2 {
-    margin-left: var(--mb-5);
-  }
-  .column {
+  /* Create four equal columns that floats next to each other */
+  .columnIcons {
     width: 50%;
+    margin-top: var(--mb-5);
   }
-}
 
-@media screen and (max-width: 500px) {
+  div.contentIcons {
+    margin-left: var(--mb-4);
+  }
+
+  .titleclassworkcontact h2 {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+    margin-top: 50%;
+  }
+
   ul.sidenav li a {
     float: none;
     display: block;
@@ -301,5 +340,104 @@ div.contentIcons {
 
   .workcontainer h2 {
     margin-left: var(--mb-5);
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .btn {
+    top: 85%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  div.contentExp {
+    margin-left: var(--mb-4);
+  }
+  div.contentIcons {
+    margin-left: var(--mb-4);
+    padding: 0px 16px;
+  }
+  .contact {
+    margin-top: var(--mb-5);
+    margin-left: var(--mb-5);
+  }
+  
+  .contact span {
+    font-size: var(--h3-font-size);
+    font-weight: bold;
+    color: var(--first-color);
+  }
+  .titleclassworkcontact h2 {
+    margin-left: var(--mb-3);
+    font-size: var(--h2-font-size);
+    margin-top: 10%;
+  }
+
+div.content {
+  margin-top: var(--mb-3);
+  margin-left: 7%;
+  height: 700px;
+}
+  .titleclasswork h2 {
+    margin-left: var(--mb-4);
+    font-size: var(--h2-font-size);
+    margin-top: 10%;
+  }
+
+  .titleclass p.textleft {
+
+    font-size: var(--h25-font-size);
+    margin-top: 3%;
+    margin-left: var(--mb-4);
+  }
+  .titleclass h2 {
+    margin-left: var(--mb-4);
+    font-size: var(--h2-font-size);
+    margin-top: 15%;
+  }
+  .btn {
+    top: 85%;
+  }
+}
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  ul.sidenav li a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  .workcontainer img {
+    display: block;
+    margin-left: var(--mb-5);
+    text-align: center;
+    width: 70%;
+    height: 70%;
+  }
+
+  .workcontainer P {
+    margin-left: var(--mb-5);
+  }
+
+  .workcontainer h2 {
+    margin-left: var(--mb-5);
+  }
+
+  .column {
+    width: 50%;
   }
 }
