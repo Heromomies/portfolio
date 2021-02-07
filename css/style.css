@@ -238,6 +238,7 @@ div.contentIcons {
 }
 
 @media screen and (max-width: 600px) {
+ 
   .column {
     margin-left: var(--mb-4);
   }
