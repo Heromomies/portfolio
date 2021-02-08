@@ -243,6 +243,7 @@ div.contentExp {
   .contact span {
     margin-left: var(--mb-2);
   }
+  
   .buttoncenter {
     margin-left: 35%;
     margin-top: 10%;
@@ -307,7 +308,6 @@ div.contentExp {
     font-size: var(--h3-font-size);
     margin-top: 5%;
     display: flex;
-    margin-left: var(--mb-4);
   }
 
   /* Create four equal columns that floats next to each other */
@@ -321,19 +321,10 @@ div.contentExp {
   .centericons{
     margin-left: var(--mb-2);
   }
-  .contact {
-    margin-top: var(--mb-5);
-    margin-left: var(--mb-4);
-  }
 
   /* Create four equal columns that floats next to each other */
   .columnIcons {
     width: 50%;
-    margin-top: var(--mb-5);
-  }
-
-  div.contentIcons {
-    margin-left: var(--mb-4);
   }
 
   .titleclassworkcontact h2 {
@@ -435,7 +426,7 @@ div.contentExp {
   }
   .titleclass p.textleft {
     font-size: var(--h5-font-size);
-    margin-left: var(--mb-5);
+    margin-left: var(--mb-3);
   }
   .titleclassworkcontact h2 {
     margin-left: var(--mb-3);
