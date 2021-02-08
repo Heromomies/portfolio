@@ -52,7 +52,7 @@ ul.sidenav li a {
   padding: 15px 0;
   color: var(--second-font-color);
   text-decoration: none;
-  width: 25%;
+  width: 20%;
   /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
   text-align: center;
   /* If you want the text to be centered */
@@ -72,8 +72,8 @@ ul.sidenav li a:hover:not(.active) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7%;
-  width: 15%;
+  margin-top: 10%;
+  width: 20%;
   transition: transform .2s;
   border-radius: 50%;
 }
@@ -89,16 +89,18 @@ ul.sidenav li a:hover:not(.active) {
 
 .centertext h1 {
   font-size: var(--h1-font-size);
+  margin-top: 10%;
 }
 
 .centertext p {
   font-size: var(--h2-font-size);
+  margin-top: 7%;
 }
 
 .titleclass h2 {
   margin-left: var(--mb-5);
   font-size: var(--h2-font-size);
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .titleclass p.textleft {
@@ -127,12 +129,15 @@ ul.sidenav li a:hover:not(.active) {
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-
+.buttoncenter {
+  margin-left: 50%;
+  margin-top: 10%;
+  position:sticky;
+  width: 100%;
+  padding: 30;
+  transform-origin: center center;
+}
 /* Blue */
 .info {
   border-color: var(--first-color);
@@ -210,20 +215,18 @@ div.contentExp {
   padding: -50px;
 }
 
-div.contentIcons {
+.centericons{
   margin-left: var(--mb-6);
-  padding: 0px 16px;
 }
-
 .contact {
   margin-top: var(--mb-5);
-  margin-left: var(--mb-6);
 }
 
 .contact span {
   font-size: var(--h3-font-size);
   font-weight: bold;
   color: var(--first-color);
+  margin-left: var(--mb-6);
 }
 
 .titleclassworkcontact h2 {
@@ -234,6 +237,7 @@ div.contentIcons {
 .skill_icn{
   color: var(--first-color);
 }
+
 .footer {
   padding-top: var(--mb-2);
   padding-bottom: var(--mb-2);
@@ -243,6 +247,13 @@ div.contentIcons {
 }
 
 @media screen and (max-width: 600px) {
+  
+  .buttoncenter {
+    margin-left: 35%;
+    margin-top: 10%;
+    position:sticky;
+    width: 100%;
+  }
   ul.sidenav {
     overflow-x: hidden;
   }
@@ -259,10 +270,6 @@ div.contentIcons {
 
   div.content {
     height: 250px;
-  }
-
-  .btn {
-    transform: translate(-50%, 50%);
   }
 
   .titleclass p.textleft {
@@ -366,8 +373,11 @@ div.contentIcons {
 }
 
 @media screen and (max-width: 1500px) {
-  .btn {
-    top: 85%;
+  .buttoncenter {
+    margin-left: 35%;
+    margin-top: 10%;
+    position:sticky;
+    width: 100%;
   }
 }
 
@@ -428,20 +438,12 @@ div.contentIcons {
     font-size: var(--h2-font-size);
     margin-top: 15%;
   }
-
-  .btn {
-    top: 85%;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .btn {
-    top: 93%;
-  }
-
-  .contact {
-    margin-top: var(--mb-5);
-    margin-left: var(--mb-5);
+  .buttoncenter {
+    margin-left: 45%;
+    margin-top: 10%;
+    position:sticky;
+    width: 100%;
+    transform-origin: center center;
   }
 }
 
@@ -450,8 +452,11 @@ div.contentIcons {
     font-size: var(--small-font-size);
   }
 
-  .btn {
-    top: 88%;
+  .buttoncenter {
+    margin-left: 35%;
+    margin-top: 10%;
+    position:sticky;
+    width: 100%;
   }
   .titleclass h2 {
     margin-left: var(--mb-3);
