@@ -420,6 +420,10 @@ div.content {
   .btn {
     top: 93%;
   }
+  .contact {
+    margin-top: var(--mb-5);
+    margin-left: var(--mb-5);
+  }
 }
 
 @media screen and (max-width: 900px) {
