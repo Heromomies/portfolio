@@ -26,7 +26,7 @@
   --mb-2: 1rem;
   --mb-3: 2rem;
   --mb-4: 2.5rem;
-  --mb-5: 2.5rem;
+  --mb-5: 3rem;
   --mb-6: 7rem;
 }
 
@@ -42,9 +42,10 @@ ul.sidenav {
   padding: 0;
   width: 100%;
   background-color: var(--color-background);
-  position: relative;
   height: auto;
   overflow: auto;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
 }
 
 ul.sidenav li a {
@@ -187,7 +188,7 @@ div.content {
 /* Create four equal columns that floats next to each other */
 .columnExp {
   float: left;
-  width: 45%;
+  width: 100%;
 }
 
 /* Content */
@@ -247,7 +248,9 @@ div.contentExp {
 }
 
 @media screen and (max-width: 600px) {
-  
+  .contact span {
+    margin-left: var(--mb-2);
+  }
   .buttoncenter {
     margin-left: 35%;
     margin-top: 10%;
@@ -263,13 +266,16 @@ div.contentExp {
     font-family: var(--body-font);
     overflow-x: hidden;
   }
-
+  .center{
+    margin-top: 20%;
+  }
   .column {
     margin-left: var(--mb-4);
   }
 
   div.content {
     height: 250px;
+    margin-top: var(--mb-5);
   }
 
   .titleclass p.textleft {
@@ -320,7 +326,9 @@ div.contentExp {
   div.contentExp {
     margin-left: var(--mb-4);
   }
-
+  .centericons{
+    margin-left: var(--mb-2);
+  }
   .contact {
     margin-top: var(--mb-5);
     margin-left: var(--mb-4);
@@ -342,41 +350,7 @@ div.contentExp {
     margin-top: 50%;
   }
 
-  ul.sidenav li a {
-    float: none;
-    display: block;
-    width: auto;
-    text-align: left;
-    padding-left: 20px;
-    /* If you want the text to be left-aligned on small screens */
-  }
-
-  .workcontainer img {
-    display: block;
-    margin-left: var(--mb-5);
-    text-align: center;
-    width: 60%;
-    height: 60%;
-  }
-
-  .workcontainer P {
-    margin-left: var(--mb-5);
-  }
-
-  .workcontainer h2 {
-    margin-left: var(--mb-5);
-  }
-
   .column {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .buttoncenter {
-    margin-left: 35%;
-    margin-top: 10%;
-    position:sticky;
     width: 100%;
   }
 }
@@ -438,25 +412,27 @@ div.contentExp {
     font-size: var(--h2-font-size);
     margin-top: 15%;
   }
-  .buttoncenter {
-    margin-left: 45%;
-    margin-top: 10%;
-    position:sticky;
-    width: 100%;
-    transform-origin: center center;
-  }
 }
 
 @media screen and (max-width: 900px) {
   .contentExp P{
     font-size: var(--small-font-size);
   }
-
-  .buttoncenter {
-    margin-left: 35%;
-    margin-top: 10%;
-    position:sticky;
-    width: 100%;
+  .contact span{
+    margin-left: var(--mb-5);
+  }
+  .column{
+    margin-left: var(--mb-5);
+  }
+  div.contentExp {
+    margin-left: var(--mb-5);
+  }
+  .centericons{
+    margin-left: var(--mb-5);
+  }
+  .titleclasscontact {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
   }
   .titleclass h2 {
     margin-left: var(--mb-3);
@@ -465,9 +441,13 @@ div.contentExp {
   }
   .titleclass p.textleft {
     font-size: var(--h5-font-size);
-    margin-left: var(--mb-2);
+    margin-left: var(--mb-5);
   }
-
+  .titleclassworkcontact h2 {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+    margin-top: 25%;
+  }
   .titleclasswork h2 {
     margin-left: var(--mb-3);
     font-size: var(--h3-font-size);
@@ -476,20 +456,6 @@ div.contentExp {
   
   body {
     overflow-x: hidden;
-  }
-
-  ul.sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  ul.sidenav li a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-
   }
 
   div.content {
