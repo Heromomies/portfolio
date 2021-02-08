@@ -150,20 +150,11 @@ ul.sidenav li a:hover:not(.active) {
   color: white;
 }
 
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row>.column {
-  padding: 8px;
-}
-
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 45%;
+
 }
 
 /* Clear floats after rows */
@@ -182,7 +173,7 @@ ul.sidenav li a:hover:not(.active) {
 div.content {
   margin-left: 23%;
   padding: 0px 16px;
-  height: 400px;
+  height: 700px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -201,6 +192,7 @@ div.contentExp {
   margin-left: var(--mb-6);
   padding: 0px 16px;
   height: 200;
+  margin-top: var(--mb-3);
 }
 
 /* Create four equal columns that floats next to each other */
@@ -354,16 +346,18 @@ div.contentExp {
     width: 100%;
   }
 }
-
+/*
 @media screen and (min-width: 1500px) {
   body {
     margin: 0;
     font-family: var(--body-font);
     overflow-x: hidden;
   }
-
+  .column{
+    margin-left: var(--mb-5);
+  }
   div.contentExp {
-    margin-left: var(--mb-4);
+    margin-left: var(--mb-5);
   }
 
   div.contentIcons {
@@ -404,7 +398,7 @@ div.contentExp {
 
     font-size: var(--h25-font-size);
     margin-top: 3%;
-    margin-left: var(--mb-4);
+    margin-left: var(--mb-5);
   }
 
   .titleclass h2 {
@@ -413,7 +407,7 @@ div.contentExp {
     margin-top: 15%;
   }
 }
-
+*/
 @media screen and (max-width: 900px) {
   .contentExp P{
     font-size: var(--small-font-size);
