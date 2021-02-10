@@ -73,14 +73,14 @@ ul.sidenav li a:hover:not(.active) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 6%;
   width: 20%;
   transition: transform .2s;
   border-radius: 50%;
 }
 
 .center:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -90,12 +90,12 @@ ul.sidenav li a:hover:not(.active) {
 
 .centertext h1 {
   font-size: var(--h1-font-size);
-  margin-top: 10%;
+  margin-top: 3%;
 }
 
 .centertext p {
   font-size: var(--h2-font-size);
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .titleclass h2 {
