@@ -230,7 +230,10 @@ div.contentExp {
 .skill_icn{
   color: var(--first-color);
 }
-
+.skill_icnfooter{
+  color: #fff;
+  margin-left: var(--mb-2);
+}
 .footer {
   padding-top: var(--mb-2);
   padding-bottom: var(--mb-2);
