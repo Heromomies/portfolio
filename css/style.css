@@ -35,7 +35,9 @@ body {
   font-family: var(--body-font);
   overflow-x: hidden;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 ul.sidenav {
   list-style-type: none;
   margin: 0;
@@ -199,7 +201,7 @@ div.contentExp {
 .columnIcons {
   float: left;
   width: 30%;
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-5);
 }
 
 /* Content */
