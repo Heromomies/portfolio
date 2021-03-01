@@ -199,7 +199,7 @@ div.contentExp {
 .columnIcons {
   float: left;
   width: 30%;
-  margin-top: var(--mb-5);
+  margin-top: var(--mb-3);
 }
 
 /* Content */
