@@ -67,7 +67,7 @@ ul.sidenav li a.active {
 }
 
 ul.sidenav li a:hover:not(.active) {
-  background-color: var(--color-navbar-hover-background);
+  background-color: var(--first-color);
   color: var(--first-font-color);
 }
 
