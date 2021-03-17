@@ -175,7 +175,7 @@ ul.sidenav li a:hover:not(.active) {
 div.content {
   margin-left: var(--mb-6);
   padding: 0px 16px;
-  height: 700px;
+  height: 450px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -244,6 +244,17 @@ div.contentExp {
   text-align: center;
 }
 @media screen and (min-width: 2000px) {
+  div.content {
+    margin-left: var(--mb-6);
+    padding: 0px 16px;
+    height: 800px;
+  }
+  .titleclasswork h2 {
+    margin-top: 10%;
+}
+.titleclassworkcontact h2 {
+  margin-top: 10%;
+}
   .center {
     margin-top: 5%;
   }
