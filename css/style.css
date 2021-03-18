@@ -92,24 +92,24 @@ ul.sidenav li a:hover:not(.active) {
 
 .centertext h1 {
   font-size: var(--h1-font-size);
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .centertext p {
   font-size: var(--h2-font-size);
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .titleclass h2 {
   margin-left: var(--mb-5);
   font-size: var(--h2-font-size);
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .titleclass p.textleft {
 
   font-size: var(--h3-font-size);
-  margin-top: 5%;
+  margin-top: 1%;
   display: flex;
   margin-left: var(--mb-6);
 }
@@ -117,7 +117,7 @@ ul.sidenav li a:hover:not(.active) {
 .titleclasswork h2 {
   margin-left: var(--mb-5);
   font-size: var(--h2-font-size);
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .titleclasswork p.textleft {
@@ -227,7 +227,7 @@ div.contentExp {
 .titleclassworkcontact h2 {
   margin-left: var(--mb-5);
   font-size: var(--h2-font-size);
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .skill_icn{
   color: var(--first-color);
@@ -243,6 +243,11 @@ div.contentExp {
   color: #fff;
   text-align: center;
 }
+@media screen and (min-width: 1800px){
+  div.content {
+    height: 800px;
+  }
+}
 @media screen and (min-width: 2000px) {
   div.content {
     margin-left: var(--mb-6);
@@ -250,22 +255,22 @@ div.contentExp {
     height: 800px;
   }
   .titleclasswork h2 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .titleclassworkcontact h2 {
-  margin-top: 10%;
+  margin-top: 5%;
 }
   .center {
     margin-top: 5%;
   }
   .centertext h1 {
     font-size: var(--h1-font-size);
-    margin-top: 5%;
+    margin-top: 2%;
   }
   
   .centertext p {
     font-size: var(--h2-font-size);
-    margin-top: 7%;
+    margin-top: 1%;
   }
 }
 @media screen and (max-width: 600px) {
