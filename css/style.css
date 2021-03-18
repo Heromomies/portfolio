@@ -117,7 +117,7 @@ ul.sidenav li a:hover:not(.active) {
 .titleclasswork h2 {
   margin-left: var(--mb-5);
   font-size: var(--h2-font-size);
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .titleclasswork p.textleft {
@@ -227,7 +227,7 @@ div.contentExp {
 .titleclassworkcontact h2 {
   margin-left: var(--mb-5);
   font-size: var(--h2-font-size);
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .skill_icn{
   color: var(--first-color);
@@ -359,13 +359,67 @@ div.contentExp {
   .titleclassworkcontact h2 {
     margin-left: var(--mb-3);
     font-size: var(--h3-font-size);
-    margin-top: 50%;
+    margin-top: 80%;
   }
 
   .column {
     width: 100%;
   }
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+  .contentExp P{
+    font-size: var(--small-font-size);
+  }
+  .contact span{
+    margin-left: var(--mb-5);
+  }
+  .column{
+    margin-left: var(--mb-5);
+  }
+  div.contentExp {
+    margin-left: var(--mb-5);
+  }
+  .centericons{
+    margin-left: var(--mb-5);
+  }
+  .titleclasscontact {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+  }
+  .titleclass h2 {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+    margin-top: 15%;
+  }
+  .titleclass p.textleft {
+    font-size: var(--h5-font-size);
+    margin-left: var(--mb-3);
+  }
+  .titleclassworkcontact h2 {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+    margin-top: 50%;
+  }
+  .titleclasswork h2 {
+    margin-left: var(--mb-3);
+    font-size: var(--h3-font-size);
+    margin-top: 20%;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  div.content {
+    margin-left: 0;
+    height: 250px;
+  }
+
+  .column {
+    width: 50%;
+  }
+  }
 /*
 @media screen and (min-width: 1500px) {
   body {
@@ -428,7 +482,7 @@ div.contentExp {
   }
 }
 */
-@media screen and (max-width: 900px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .contentExp P{
     font-size: var(--small-font-size);
   }
@@ -474,6 +528,7 @@ div.contentExp {
 
   div.content {
     margin-left: 0;
+    height: 400px;
   }
 
   .column {
