@@ -175,7 +175,7 @@ ul.sidenav li a:hover:not(.active) {
 div.content {
   margin-left: var(--mb-6);
   padding: 0px 16px;
-  height: 450px;
+  height: 600px;
 }
 
 /* Create four equal columns that floats next to each other */
