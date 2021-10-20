@@ -107,11 +107,11 @@ ul.sidenav li a:hover:not(.active) {
 }
 
 .titleclass p.textleft {
-
   font-size: var(--h3-font-size);
   margin-top: 1%;
   display: flex;
   margin-left: var(--mb-6);
+  margin-right: var(--mb-6);
 }
 
 .titleclasswork h2 {
