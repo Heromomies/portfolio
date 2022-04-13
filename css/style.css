@@ -178,6 +178,10 @@ div.content {
   height: 600px;
 }
 
+div.content h3{
+  color: var(--first-color);
+}
+
 /* Create four equal columns that floats next to each other */
 .columnExp {
   float: left;
@@ -196,7 +200,9 @@ div.contentExp {
   height: 200;
   margin-top: var(--mb-3);
 }
-
+div.contentExp h3 {
+  color: var(--first-color);
+}
 /* Create four equal columns that floats next to each other */
 .columnIcons {
   float: left;
