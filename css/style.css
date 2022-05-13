@@ -378,7 +378,15 @@ div.contentExp h3 {
   }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  
+ 
+  .content P{
+    margin-top: auto;
+    margin-bottom: 100%;
+  }
+  .content img{
+    margin-top: 10%;
+  }
+
   .contentExp P{
     font-size: var(--small-font-size);
   }
@@ -387,6 +395,7 @@ div.contentExp h3 {
   }
   .column{
     margin-left: var(--mb-5);
+    margin-top: 20%;
   }
   div.contentExp {
     margin-left: var(--mb-5);
@@ -502,6 +511,7 @@ div.contentExp h3 {
   }
   .column{
     margin-left: var(--mb-5);
+  
   }
   div.contentExp {
     margin-left: var(--mb-5);
