@@ -279,104 +279,7 @@ div.contentExp h3 {
     margin-top: 1%;
   }
 }
-@media screen and (max-width: 600px) {
-  .contact span {
-    margin-left: var(--mb-2);
-  }
-  
-  .buttoncenter {
-    margin-left: 35%;
-    margin-top: 10%;
-    position:sticky;
-    width: 100%;
-  }
-  ul.sidenav {
-    overflow-x: hidden;
-  }
 
-  body {
-    margin: 0;
-    font-family: var(--body-font);
-    overflow-x: hidden;
-  }
-  .center{
-    margin-top: 20%;
-  }
-  .column {
-    margin-left: var(--mb-4);
-  }
-
-  div.content {
-    height: 250px;
-    margin-top: var(--mb-5);
-  }
-
-  .titleclass p.textleft {
-    font-size: var(--h5-font-size);
-    margin-left: var(--mb-4);
-  }
-
-  .titleclasswork h2 {
-    margin-left: var(--mb-3);
-    font-size: var(--h3-font-size);
-    margin-top: 20%;
-  }
-
-  .titleclasswork p.textleft {
-
-    font-size: var(--h3-font-size);
-    margin-top: 20%;
-    display: flex;
-  }
-
-  .titleclass h2 {
-    margin-left: var(--mb-5);
-    font-size: var(--h3-font-size);
-    margin-top: 5%;
-  }
-
-  .centertext h1 {
-    font-size: var(--h2-font-size);
-  }
-
-  .centertext p {
-    font-size: var(--h3-font-size);
-  }
-
-  .titleclass p.textleft {
-
-    font-size: var(--h3-font-size);
-    margin-top: 5%;
-    display: flex;
-  }
-
-  /* Create four equal columns that floats next to each other */
-  .columnExp {
-    width: 100%;
-  }
-
-  div.contentExp {
-    margin-left: var(--mb-4);
-  }
-  .centericons{
-    margin-left: var(--mb-2);
-  }
-
-  /* Create four equal columns that floats next to each other */
-  .columnIcons {
-    width: 50%;
-  }
-
-  .titleclassworkcontact h2 {
-    margin-left: var(--mb-3);
-    font-size: var(--h3-font-size);
-    margin-top: 80%;
-  }
-
-  .column {
-    width: 100%;
-  }
-}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
  
   .content P{
@@ -393,10 +296,14 @@ div.contentExp h3 {
   .contact span{
     margin-left: var(--mb-5);
   }
+
   .column{
     margin-left: var(--mb-5);
-    margin-top: 20%;
+    margin-top: 40%;
+    float: auto;
+    width: 100%;
   }
+
   div.contentExp {
     margin-left: var(--mb-5);
   }
@@ -440,119 +347,3 @@ div.contentExp h3 {
     width: 50%;
   }
   }
-/*
-@media screen and (min-width: 1500px) {
-  body {
-    margin: 0;
-    font-family: var(--body-font);
-    overflow-x: hidden;
-  }
-  .column{
-    margin-left: var(--mb-5);
-  }
-  div.contentExp {
-    margin-left: var(--mb-5);
-  }
-
-  div.contentIcons {
-    margin-left: var(--mb-4);
-    padding: 0px 16px;
-  }
-
-  .contact {
-    margin-top: var(--mb-5);
-    margin-left: var(--mb-5);
-  }
-
-  .contact span {
-    font-size: var(--h3-font-size);
-    font-weight: bold;
-    color: var(--first-color);
-  }
-
-  .titleclassworkcontact h2 {
-    margin-left: var(--mb-3);
-    font-size: var(--h2-font-size);
-    margin-top: 10%;
-  }
-
-  div.content {
-    margin-top: var(--mb-3);
-    margin-left: 7%;
-    height: 700px;
-  }
-
-  .titleclasswork h2 {
-    margin-left: var(--mb-4);
-    font-size: var(--h2-font-size);
-    margin-top: 10%;
-  }
-
-  .titleclass p.textleft {
-
-    font-size: var(--h25-font-size);
-    margin-top: 3%;
-    margin-left: var(--mb-5);
-  }
-
-  .titleclass h2 {
-    margin-left: var(--mb-4);
-    font-size: var(--h2-font-size);
-    margin-top: 15%;
-  }
-}
-*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .contentExp P{
-    font-size: var(--small-font-size);
-  }
-  .contact span{
-    margin-left: var(--mb-5);
-  }
-  .column{
-    margin-left: var(--mb-5);
-  
-  }
-  div.contentExp {
-    margin-left: var(--mb-5);
-  }
-  .centericons{
-    margin-left: var(--mb-5);
-  }
-  .titleclasscontact {
-    margin-left: var(--mb-3);
-    font-size: var(--h3-font-size);
-  }
-  .titleclass h2 {
-    margin-left: var(--mb-3);
-    font-size: var(--h3-font-size);
-    margin-top: 15%;
-  }
-  .titleclass p.textleft {
-    font-size: var(--h5-font-size);
-    margin-left: var(--mb-3);
-  }
-  .titleclassworkcontact h2 {
-    margin-left: var(--mb-3);
-    font-size: var(--h3-font-size);
-    margin-top: 25%;
-  }
-  .titleclasswork h2 {
-    margin-left: var(--mb-3);
-    font-size: var(--h3-font-size);
-    margin-top: 20%;
-  }
-  
-  body {
-    overflow-x: hidden;
-  }
-
-  div.content {
-    margin-left: 0;
-    height: 400px;
-  }
-
-  .column {
-    width: 50%;
-  }
-}
